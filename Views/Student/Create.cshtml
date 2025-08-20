@@ -1,0 +1,19 @@
+﻿@Model SchoolMgmt.Web.ViewModels.StudentVm
+
+
+using (Html.BeginForm())
+{
+    <div>
+        Html.LabelFor(m => m.FirstName)
+        Html.TextBoxFor(m => m.FirstName)
+        Html.ValidationMessageFor(m => m.FirstName)
+    </div>
+
+    <div>
+        Html.LabelFor(m => m.Age)
+        Html.TextBoxFor(m => m.Age)
+        Html.ValidationMessageFor(m => m.Age)
+    </div>
+
+    <button type="submit">Save</button>
+}
